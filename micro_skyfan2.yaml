@@ -27,7 +27,7 @@ esphome:
   name: ${device_name}
   name_add_mac_suffix: true
   project:
-    name: jimmy.easy_skyfandc
+    name: mramage.easy_skyfandc
     version: "0.2"
   on_boot: #Setup temperature reading so you don't get a random reading come through at startup
     priority: -100
@@ -43,7 +43,7 @@ esp8266:
 
 #Dashboard import if you want to adopt the device on your esphome dashboard
 dashboard_import:
-  package_import_url: github://jeggleston1981/skyfandc/micro_skyfan2.yaml
+  package_import_url: github://mramage/skyfandc/micro_skyfan2.yaml
 
 api:
 

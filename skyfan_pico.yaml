@@ -2,7 +2,7 @@ esphome:
   name: ${device_name}
   name_add_mac_suffix: true
   project:
-    name: jimmy.easy_skyfandc_pico
+    name: mramage.easy_skyfandc_pico
     version: "0.3"
 
 esp32:
@@ -19,7 +19,7 @@ captive_portal:
 
 #Dashboard import if you want to adopt the device on your esphome dashboard
 dashboard_import:
-  package_import_url: github://jeggleston1981/skyfandc/skyfan_pico.yaml
+  package_import_url: github://mramage/skyfandc/skyfan_pico.yaml
   
 packages:
   skyfan.tuya_fan: !include
