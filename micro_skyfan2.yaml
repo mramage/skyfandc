@@ -38,8 +38,8 @@ esphome:
       
 esp8266:
   board: d1_mini
-#web_server:
-#  port: 80
+web_server:
+  port: 80
 
 #Dashboard import if you want to adopt the device on your esphome dashboard
 dashboard_import:
