@@ -58,6 +58,8 @@ i2c:
   scl: 5
   scan: true
 ota:
+  - platform: esphome     # normal OTA method
+  - platform: web_server  # web-based OTA uploads
 
 wifi:
   ap:
