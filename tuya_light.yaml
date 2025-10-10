@@ -6,6 +6,7 @@
 ---
 substitutions:
   light_name: "SkyFan DC Light"
+  light_restore_mode: ALWAYS_ON
 
 light:
   - id: skyfan_light
@@ -19,20 +20,20 @@ light:
 #    color_temperature_max_value: 2
 #    color_temperature_invert: true
 #    color_mode: BRIGHTNESS # [color_mode] is an invalid option for [light.tuya]. 
-    restore_mode: ALWAYS_ON
+    restore_mode: ${light_restore_mode}
     disabled_by_default: true
 
-# select:
-#   - id: datapoint_light_color_temperature
-#     platform: tuya
-#     tuya_id: tuyamcu
-#     name: ${light_name} Color Temperature
-#     enum_datapoint: 19
-#     options:
-#       0: 'WARM WHITE (3000K)'
-#       1: 'NATURAL WHITE (4200K)'
-#       2: 'COOL WHITE (6500K)'
-#     disabled_by_default: true
+select:
+  - id: datapoint_light_color_temperature
+    platform: tuya
+    tuya_id: tuyamcu
+    name: ${light_name} Color Temperature
+    enum_datapoint: 19
+    options:
+      0: 'WARM WHITE (3000K)'
+      1: 'NATURAL WHITE (4200K)'
+      2: 'COOL WHITE (6500K)'
+    disabled_by_default: true
 
 # tuya:
 #   id: tuyamcu

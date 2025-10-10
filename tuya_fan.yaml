@@ -2,6 +2,7 @@
 ---
 substitutions:
   fan_name: "SkyFan DC Fan"
+  fan_restore_mode: NO_RESTORE
 
 fan:
   - id: skyfan
@@ -9,7 +10,7 @@ fan:
     output: skyfan_speed
     direction_output: skyfan_direction
     name: ${fan_name}
-    restore_mode: NO_RESTORE
+    restore_mode: ${fan_restore_mode}
     disabled_by_default: false
     speed_count: 6
 
