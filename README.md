@@ -1,3 +1,7 @@
+NOTE: This project is a fork of the great project at https://github.com/jeggleston1981/skyfandc to add support for more recent ESPHome releases that had some breaking changes. I'm also working on porting this project to the esp32c6, and will release the board design files and firmware off i get it working.  Eventually I plan to release a new project that uses ZigBee instead of wifi - the intent is to allow for more direct binding of a ZigBee remote with the fan controller module so it "just works" without any wifi requirement, while still allowing home assistant integration via e.g. Zigbee2mqtt.
+
+# The original readme:
+
 # SkyFan DC ESPhome Setup
 
 This project is for taking local control over a SkyfanDC ceiling fan made by Ventair, through the use of a custom PCB instead of the TUYA based modules the manufacturer provides. This will allow for local integration with ESPhome and Home Assistant, and will not work with any manufacturer provided apps/platforms (the supplied remote control works though).
