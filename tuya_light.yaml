@@ -1,8 +1,8 @@
 # This exposes a light entity to the frontend (like Home Assistant). 
 # Tuya datapoints thanks of https://github.com/SirMrDexter/skyfandc
+# Note: I had to modify the colour temperature options as they appeared to be inverted for my fan/light
 #
-# **WARNING**
-# Untested and incomplete.
+
 ---
 substitutions:
   light_name: "SkyFan DC Light"
@@ -30,9 +30,9 @@ select:
     name: ${light_name} Color Temperature
     enum_datapoint: 19
     options:
-      0: 'WARM WHITE (3000K)'
+      0: 'COOL WHITE (6500K)'
       1: 'NATURAL WHITE (4200K)'
-      2: 'COOL WHITE (6500K)'
+      2: 'WARM WHITE (3000K)'
     disabled_by_default: true
 
 # tuya:
