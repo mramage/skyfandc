@@ -23,13 +23,13 @@ If I find a drop-ship style PCB fabrication service, then I'll consider setting 
 I'm happy for people to make these for others though, as long as it's clear they aren't affiliated with me or this project directly. If someone figures out how to get rich off a niche little PCB I designed, then good for you!
 
 ## Roadmap
-[x] ESP32C6 based prototype PCB fabricated (completed: July 2026)
-[x] Get existing esphome functionlity running on prototype board (completed: July 2026)
-[ ] Proof of concept: very basic zigbee implementation of on/off light control functioning on esp32c6 board. Likely to be a standalone test without esphome functionality (planned: July 2026)
-[ ] Get zigbee level control of light working (planned: July-Aug 2026)
-[ ] Get zigbee light functionality working alongside esphome functionality (planned: July-Aug 2026)
-[ ] Test direct binding of IKEA STYRBAR remote control. I believe this will be configured via zigbee2mqtt, but will then make the light respond directly to zigbee transmissions from the remote (planned Aug 2026)
-[ ] If all that works, then I may try to get the fan speed control working with the left/right buttons on the remote. From what I have seen those buttons send scene commands, so this is likely going to be a non-standard way of using them and not as reusable for others. If I do get this working, I'll make sure to keep that in a separate file, or have some other way to make it not affect use of this code by others. 
+- [x] ESP32C6 based prototype PCB fabricated (completed: July 2026)
+- [x] Get existing esphome functionlity running on prototype board (completed: July 2026)
+- [ ] Proof of concept: very basic zigbee implementation of on/off light control functioning on esp32c6 board. Likely to be a standalone test without esphome functionality (planned: July 2026)
+- [ ] Get zigbee level control of light working (planned: July-Aug 2026)
+- [ ] Get zigbee light functionality working alongside esphome functionality (planned: July-Aug 2026)
+- [ ] Test direct binding of IKEA STYRBAR remote control. I believe this will be configured via zigbee2mqtt, but will then make the light respond directly to zigbee transmissions from the remote (planned Aug 2026)
+- [ ] If all that works, then I may try to get the fan speed control working with the left/right buttons on the remote. From what I have seen those buttons send scene commands, so this is likely going to be a non-standard way of using them and not as reusable for others. If I do get this working, I'll make sure to keep that in a separate file, or have some other way to make it not affect use of this code by others. 
 
 There's a risk that I might not get zigbee and esphome wifi working simultaneously. In that scenario, I will need to decide if zigbee can be done on the esphome platform without wifi enabled, or I may do it on another platform or natively. I will still keep the esphome yaml files for the esp32c6 boards available within this project, and will decide if the zigbee stuff has to be done in a separate project.
 
